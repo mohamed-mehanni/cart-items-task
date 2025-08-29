@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cairo:wght@200..1000&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-MRt7ZK2ULbRgGKkcVuh5rCPGH35OcM0N0IMB8XkHCrhqZ8VJ9w+HcZC2j7DgmnDL5CjvjS+p1uwclzD2dlr1xw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ainergy</title>
+
+
+</head>
+
+<body>
+    <header>
+        <section class="home" id="Home">
+            <div class="container">
+                <div class="navbar">
+                    <div class="left-header">
+                        <button id="changetheembtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" viewBox="0 -960 960 960">
+                                <path
+                                    d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"
+                                    fill="black" />
+                            </svg>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" viewBox="0 -960 960 960">
+                                <path
+                                    d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"
+                                    fill="#ffdf00" />
+                            </svg>
+
+                        </button>
+                        <div class="logo"><span>A</span>inergy</div>
+                    </div>
+
+                    <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Toggle menu"
+                        aria-expanded="false">
+                        <span class="fallback-bars">☰</span>
+                    </button>
+
+                    <ul class="nav-links">
+
+                        <li class="cart-icon nav-link" onclick="toggleCart()">
+                            <i class="fas fa-shopping-cart "></i>
+                            <span id="cart-count">0</span>
+                            <div id="cart-dropdown" class="cart-dropdown"></div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#Home"><span>Home</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Features">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Timeline"><span>Timeline</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-title">
+                    <h1> Welcome to Ainergy </h1>
+                    <h2> The Biggest Business Booster in Egypt, and Middle East.</h2>
+                </div>
+                <div class="hero-img">
+                    <img src="./img/hero-img.png" alt="hero">
+                </div>
+                <div class="hero-btn">
+                    <button class="start-btn">GET STARTED</button>
+                </div>
+                <div class="hero-other-btn">
+                    <a href="#" class="store-btn"><i class="fa-brands fa-apple"></i><span>APP STORE</span></a>
+                    <a href="#" class="store-btn"><i class="fa fa-play"></i><span>GOOGLE PLAY</span></a>
+
+                </div>
+
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="mobile-section" id="About">
+            <div class="mobile-section-overlay"></div>
+            <div class="mobile-section-container">
+                <div class="content-wrapper">
+                    <div class="phone-image">
+                        <img src="./img/about-img.png" alt="" />
+                    </div>
+
+                    <div class="text-content">
+                        <h2><span>AINERGY</span> UI Design <br /> Mobile</h2>
+                        <p>
+                            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.
+                        </p>
+                        <ul class="features">
+                            <li><i class="bi bi-chevron-right"></i> Creative Design</li>
+                            <li><i class="bi bi-chevron-right"></i> Retina Ready</li>
+                            <li><i class="bi bi-chevron-right"></i> Easy To Use</li>
+                            <li><i class="bi bi-chevron-right"></i> Unlimited Features</li>
+                            <li><i class="bi bi-chevron-right"></i> Unlimited Features</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="child-sticker">
+                <img src="./img/about1.png" alt="" class="child-sticker" />
+            </div>
+        </section>
+        <section class="amazing-service" id="Features">
+            <div class="amazing-container">
+                <h1>Amazing Services.</h1>
+                <h6>Services .</h6>
+
+                <div class="services-wrapper">
+                    <div class="service-box ">
+                        <div class="service-media">
+                            <img src="./img/paint-palette.svg" alt="">
+                            <h4>MEDIA PRODUCTION</h4>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-training">
+                            <img src="./img/vector.svg" alt="">
+                            <h4>TRAINING SOLUTIONS</h4>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-business">
+                            <img src="./img/design-tool.svg" alt="">
+                            <h4>BUSINESS DEVELOPMENT</h4>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="service-marketing">
+                            <img src="./img/pixel.svg" alt="">
+                            <h4>MARKETING SOLUTIONS</h4>
+                        </div>
+
+                    </div>
+                    <div class="service-box">
+                        <div class="service-software">
+                            <img src="./img/code.svg" alt="">
+                            <h4>SOFTWARE SOLUTIONS</h4>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="amazing-sticker">
+                <img src="./img/about2.png" alt="Character">
+            </div>
+        </section>
+        <section class="forsa-section">
+            <div class="forsa-layout"></div>
+            <div class="forsa-container">
+                <div class="forsa-title">
+                    <h2>Forsa App Created and Developed by Ainergy</h2>
+                </div>
+
+                <div class="row">
+                    <div class="item">
+                        <img src="./img/cloud.svg" alt="">
+                        <h5> Vision </h5>
+                        <p> present a real complete services with the hardest equation " High Quality, Low Price"
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/planet.svg" alt="">
+                        <h5> Mission </h5>
+                        <p> help all kind of businesses to grow faster than ever, by the most valuable effective
+                            tools
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+        <section class="timeline-service" id="Timeline">
+            <div class="timeline-container">
+                <h1> Timeline. </h1>
+                <h6> Services .</h6>
+
+                <div class="timeline-wrapper">
+                    <div class="timeline-box ">
+                        <div class="consulting-media">
+                            <i class="fa-solid fa-handshake fa-3x"></i>
+                            <h4>Free consulting meeting</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-box ">
+                        <div class="scope-media">
+                            <i class="fa-solid fa-microscope fa-3x"></i>
+                            <h4> Create a scope </h4>
+                        </div>
+                    </div>
+                    <div class="timeline-box ">
+                        <div class="plan-media">
+                            <i class="fa-solid fa-paper-plane fa-3x"></i>
+                            <h4> Prepare a business plan </h4>
+                        </div>
+                    </div>
+                    <div class="timeline-box ">
+                        <div class="scheduling-media">
+                            <i class="fa-solid fa-calendar-days fa-3x"></i>
+                            <h4>Scheduling</h4>
+                        </div>
+                    </div>
+                    <div class="timeline-box ">
+                        <div class="target-media">
+                            <i class="fa-solid fa-bullseye fa-3x"></i>
+                            <h4>Achieve the target </h4>
+                        </div>
+                    </div>
+                    <div class="timeline-box ">
+                        <div class="customer-media">
+                            <i class="fa-solid fa-users fa-3x"></i>
+                            <h4>Ensure customer satisfaction </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="our-products" id="products">
+            <h1 class="mb-5">Our Products</h1>
+
+            <div class="Products" id="product-list"></div>
+
+
+
+        </section>
+        <section class="team-section">
+            <h2 class="team-title">Team Member</h2>
+            <p class="team-subtitle">Integer Cursus Bibendum Augue Ac Cursus .</p>
+
+            <div class="team-row">
+                <div class="profile-card">
+                    <div class="image-container">
+                        <img src="./img/1.jpg" alt="Member 1" />
+                        <div class="overlay">
+                            <div class="social-icons">
+                                <i class="bi bi-facebook"></i>
+                                <i class="bi bi-twitter"></i>
+                                <i class="bi bi-linkedin"></i>
+                            </div>
+                            <p class="position">manager</p>
+                            <p class="name">KIMBERLY TRAN</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <div class="image-container">
+                        <img src="./img/2.jpg" alt="Member 2" />
+                        <div class="overlay">
+                            <div class="social-icons">
+                                <i class="bi bi-facebook"></i>
+                                <i class="bi bi-twitter"></i>
+                                <i class="bi bi-linkedin"></i>
+                            </div>
+                            <p class="position">developer</p>
+                            <p class="name">SARAH SMITH</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <div class="image-container">
+                        <img src="./img/3.jpg" alt="Member 3" />
+                        <div class="overlay">
+                            <div class="social-icons">
+                                <i class="bi bi-facebook"></i>
+                                <i class="bi bi-twitter"></i>
+                                <i class="bi bi-linkedin"></i>
+                            </div>
+                            <p class="position">designer</p>
+                            <p class="name">JOHN DOE</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <div class="image-container">
+                        <img src="./img/4.jpg" alt="Member 4" />
+                        <div class="overlay">
+                            <div class="social-icons">
+                                <i class="bi bi-facebook"></i>
+                                <i class="bi bi-twitter"></i>
+                                <i class="bi bi-linkedin"></i>
+                            </div>
+                            <p class="position">marketing</p>
+                            <p class="name">ANNA LEE</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="blog">
+            <h2 class="blog-title">Blogs</h2>
+            <p class="blog-subtitle">Integer cursus bibendum augue ac cursus ..</p>
+            <div class="blog-container">
+                <div class="blog-row">
+                    <div class="blog-card">
+                        <img src="./img/blog-image-1.jpg" alt="" />
+                        <div class="blog-content">
+                            <p>whats isthe difference between good and bat typography</p>
+                            <div class="blog-footer">
+                                <small class="blog-date">05, juin 2017</small>
+                                <a href="#" class="blog-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <img src="./img/blog-image-2.jpg" alt="" />
+                        <div class="blog-content">
+                            <p>whats isthe difference between good and bat typography</p>
+                            <div class="blog-footer">
+                                <small class="blog-date">05, juin 2017</small>
+                                <a href="#" class="blog-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <img src="./img/blog-image-3.jpg" alt="" />
+                        <div class="blog-content">
+                            <p>whats isthe difference between good and bat typography</p>
+                            <div class="blog-footer">
+                                <small class="blog-date">05, juin 2017</small>
+                                <a href="#" class="blog-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="contact-section" id="Contact">
+            <h2 class="contact-title">Contact</h2>
+
+            <div class="contact-container">
+                <!-- Left side (Info + Map) -->
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="bi bi-geo-alt icon"></i>
+                        <div>
+                            <p>8St.mit ghamr</p>
+                            <p>Safir Squ. - Heliopolis – Cairo</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="bi bi-envelope icon"></i>
+                        <p>test@example.com</p>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="bi bi-phone icon"></i>
+                        <p>01556802484</p>
+                    </div>
+
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55251.37451031098!2d31.258464350000004!3d30.059488450000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2z2KfZhNmC2KfZh9ix2KnYjCDZhdit2KfZgdi42Kkg2KfZhNmC2KfZh9ix2KnigKw!5e0!3m2!1sar!2seg!4v1746157202915!5m2!1sar!2seg"
+                            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Right side (Form) -->
+                <div class="form-container">
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Phone number" required>
+                        <input type="text" placeholder="Business name">
+                        <input type="text" placeholder="Category" required>
+                        <textarea placeholder="Message" rows="5" required></textarea>
+                        <button type="submit" class="send-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-top"></div>
+        <div class="copyrights">
+            <div class="container">
+                <p>&copy; Right reserved to Ainergy</p>
+                <div class="owner">
+                    Designed by <a href="http://www.linkedin.com/in/mohamed-mehanni-399753a8">Mohamed Mehanni</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"> </script>
+    <script src="./js/all.min.js"> </script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
