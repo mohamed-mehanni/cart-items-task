@@ -125,12 +125,12 @@ function displayProducts() {
 }
 
 // show itemj img in cart
-function renderCart(){
+function renderCart() {
     const cartItems = document.getElementById("product-list");
     const totalItems = document.getElementById("cart-count");
 
-    let cart_count = 0; 
-    cart.forEach((item)=>{
+    let cart_count = 0;
+    cart.forEach((item) => {
         const image = document.createElement("img");
         image.src = "item.img";
         image.style.width = "50px";
@@ -157,6 +157,7 @@ function addToCart(id) {
         cart.push({ ...item, qty: 1 });
     }
     renderCart(true);
+    updateCartCount();
 }
 
 // removeFromCart
@@ -195,7 +196,7 @@ function renderCart(keepOpen = false) {
           </div>
         </div>`
         )
-        
+
         .join("");
 
     if (cart.length === 0) {

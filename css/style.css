@@ -72,6 +72,21 @@ body.dark_mode .nav-links {
     background: #222;   
 }
 
+body.dark_mode .product-card{
+    background: #222; 
+}
+
+body.dark_mode .product-card h3{
+    color: white; 
+    
+}
+
+body.dark_mode .cart-dropdown{
+    color: white;
+    background: #222;
+}
+
+
 .logo {
     font-size: 25px;
     font-weight: 550;
@@ -543,13 +558,11 @@ body.dark_mode .nav-links {
 
     .phone-image img {
         width: 170px;
-        /* حجم أصغر */
     }
 
     .text-content {
         max-width: 350px;
         font-size: 14px;
-        /* تقليل حجم النص إن لزم */
         padding: 10px;
     }
 
@@ -1040,6 +1053,7 @@ body.dark_mode .nav-links {
     max-height: 300px;
     overflow-y: auto;
     display: none;
+   
 }
 
 .cart-dropdown.active {
@@ -1054,6 +1068,7 @@ body.dark_mode .nav-links {
     margin-bottom: 10px;
     max-height: 300px;
     overflow-y: auto
+    
 }
 
 
